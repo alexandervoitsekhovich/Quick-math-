@@ -3,7 +3,7 @@
 
 .wrapper{
     display: grid;
-    grid-template-rows: 20% 70% 10%;
+    grid-template-rows: 13% 77% 10%;
     grid-template-columns: 1fr;
     grid-template-areas: "header"
                          "main"
@@ -20,14 +20,41 @@
             align-items: center;
             height: 100%;
             .header__heading{
+                margin-left: 96px;
                 font-family: "Rubik";
                 font-weight: 500;
                 font-size: 32px;
+            }
+            .header__select{
+                margin-right: 96px;
+                height: 44px;
+                width: 226px;
+                .selector{
+                    height: 44px;
+                    width: 226px;
+                    border: 2px solid #000000;
+                    border-radius: 25px;
+                    background-color: #F8F9EC;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .selector__item{
+                        .selector__span{
+                            font-family: 'Rubik';
+                            font-size: 14px;
+                            font-weight: 500
+                        }
+                    }
+                }
             }
         }
     }
     main{
         grid-area: main;
+        .main__container{
+            display: flex;
+        }
     }
     footer{
         grid-area: footer;
