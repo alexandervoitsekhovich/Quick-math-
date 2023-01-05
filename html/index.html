@@ -14,7 +14,7 @@
                 <h1 class="header__heading">Quick math!</h1>
                 <div class="header__select">
                     <select class="selector">
-                        <option class="selector__item" value="eng"><span class="selector__span">choose language</span></option>
+                        <option class="selector__item" selected hidden>choose language</option>
                         <option class="selector__item" value="eng"><span class="selector__span">English</span></option>
                         <option class="selector__item" value="deu"><span class="selector__span">Deutsch</span></option>
                         <option class="selector__item" value="rus"><span class="selector__span">Русский</span></option>
@@ -25,7 +25,7 @@
         </header>
         <main>
             <div class="main__container">
-                <div class="main__question"><span class="question__text"></span></div>
+                <div class="main__question"><span class="question__text" id="problem"></span></div>
                 <div class="main__answer">
                     <input id="enter"></input>
                     <button id="answer">answer!</button>
